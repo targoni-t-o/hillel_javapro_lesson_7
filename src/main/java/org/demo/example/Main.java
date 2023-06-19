@@ -5,7 +5,7 @@ public class Main {
         ArrayValueCalculator arrayValueCalculator = new ArrayValueCalculator();
 
         try {
-            int result = arrayValueCalculator.doCalc(new String[][]{{"1", "a", "3", "4"}, {"5", "6", "7", "8"}, {"9", "10", "11", "12"}});
+            int result = arrayValueCalculator.doCalc(new String[][]{{"1", "a", "3", "b"}, {"5", "c", "7", "d"}, {"9", "e", "f", "g"}});
             System.out.println("Result: " + result);
         } catch (ArraySizeException | ArrayDataException ex) {
             System.out.println(ex.getMessage());
